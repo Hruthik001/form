@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+            <form onsubmit="takevalue()">
+                <div class="names">
+                    <div class="name1">
+                        <p class="firstName">First Name</p>
+                        <input class="box" type="text" id="firstName">
+                    </div>
+           
+                    <div class="name2">   
+                        <p class="lastName">Last Name</p>
+                        <input class="box" type="text" id="lastName">
+                        </div>
+    
+                    <div class="gs">
+                        <div class="gs1">
+                            <p for="gender">Gender</p>
+                            <select class="gender" id="gender">
+                                <option class="">Select Gender</option>
+                                <option class="male">Male</option>
+                                <option class="female">Female</option>
+                                <option class="other">Other</option>
+                            </select>
+                        </div>
+                    
+                        <div class="gs2">
+                            <p class="studentID">Student ID</p>
+                            <input class="box" type="text" id="studentID">
+                        </div>    
+                    </div>
+    
+                    <div class="sl">
+                        <div class="sl1">
+                            <p class="email">Student E-mail</p>
+                        <input class="box" type="email" id="email" placeholder="example@example.com" required>
+                    </div>
+                    <div class="sl2">
+                        <p class="classes">List of Classes</p>
+                        <select class="class" id="classes">
+                            <option value="">Select classes</option>
+                            <option value="1st puc">1st puc</option>
+                            <option value="2nd puc">2nd puc</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <input class="submit" type="submit" value="submit"></input>        
+            </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
